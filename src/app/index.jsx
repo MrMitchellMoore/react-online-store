@@ -1,10 +1,3 @@
-import React from 'react';
-import './app.css';
+import App from './app';
 
-export default function App () {
-  return (
-    <div>
-      Welcome To my store!
-    </div>
-  );
-}
+export default App;
