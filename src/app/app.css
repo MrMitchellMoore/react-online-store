@@ -3,6 +3,9 @@
   --secondaryColor: #e5e5e5;
 
   --mainBorderColor: black;
+  --secondaryBorderColor: rgb(158, 191, 218);
+
+  --imageBackgroundColor: rgba(166, 203, 235, 0.1);
 
   font-size: 16px;
   font-family: 'Poppins', sans-serif;

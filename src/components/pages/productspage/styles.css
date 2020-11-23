@@ -5,6 +5,20 @@
 
 .products .product {
   margin: 2rem;
+
+  padding: 1rem;
+  position: relative;
+}
+
+.products .product .add-to-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.products .product.hover {
+  background-color: var(--imageBackgroundColor);
+  padding-bottom: 1.5rem;
 }
 
 .products .tags .tag {
@@ -22,4 +36,10 @@
 .product img {
   width: 300px;
   height: 300px;
+}
+
+.product .card {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
