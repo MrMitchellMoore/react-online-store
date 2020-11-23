@@ -9,9 +9,12 @@ export default function Product({name, imageUrl, price, tags, colors}) {
       onMouseLeave={() => setHover (false)}
     >
       <div className="card">
+        <div className="card-title">
+          <div className="add-to-cart">+</div>
+        </div>
         <img src={imageUrl} alt={name} />
         <div className="name">{name}</div>
-        <div className="price">Price: {price}</div>
+        <div className="price">Price: ${price}</div>
         <div className="tags">
           Tags:
           {' '}
