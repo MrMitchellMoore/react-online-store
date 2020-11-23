@@ -1,0 +1,79 @@
+[{
+    "id": "9d6f41f7-4a55-4b2c-87b5-eba52aa79a68",
+    "name": "Mens Leather Lace-up Boots",
+    "price": "105.00",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adyb700032_dcshoes,p_3bk_frt2.jpg",
+    "description": "desc",
+    "tags": [
+      "shoes"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "621e08a5-5590-4745-b165-db7c45981d45",
+    "name": "Mens Leather Lace-up Boots",
+    "price": "105.00",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adyb700032_dcshoes,p_bf0_frt2.jpg",
+    "description": "desc",
+    "tags": [
+      "shoes"
+    ],
+    "colors": [
+      "Black Forest Green"
+    ]
+  },
+  {
+    "id": "8c58e0a8-2835-410b-b623-2da4b31f6da1",
+    "name": "Mens Chained Up Tee",
+    "price": "20.99",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adyzt04817_chaineduphss,f_btl0_bck1.jpg",
+    "description": "desc",
+    "tags": [
+      "clothing"
+    ],
+    "colors": [
+      "Navy Blue"
+    ]
+  },
+  {
+    "id": "0109a7af-6941-4ec2-9abf-bd306c3326c1",
+    "name": "Mens Chained Up Tee",
+    "price": "20.99",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adyzt04817_chaineduphss,f_kvj0_frt1.jpg",
+    "description": "desc",
+    "tags": [
+      "clothing"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "675a047c-0285-4afa-a252-3356e0c3a3b3",
+    "name": "Space Echo Snow Board",
+    "price": "303.99",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adysb03036_spaceecho,p_mul_frt1.jpg",
+    "description": "desc",
+    "tags": [
+      "accessories"
+    ],
+    "colors": [
+      "white"
+    ]
+  },
+  {
+    "id": "e578ec3b-f481-461a-bf18-245407b61268",
+    "name": "Mens Riot Zip-Up Hoodie",
+    "price": "43.99",
+    "imageUrl": "https://images.boardriders.com/global/dcshoes-products/all/default/medium-large/adyft03240_dcshoes,f_btl0_frt1.jpg",
+    "description": "desc",
+    "tags": [
+      "clothing"
+    ],
+    "colors": [
+      "Navy Blue"
+    ]
+  }
+]
