@@ -7,9 +7,13 @@ export default function Product({id, name, imageUrl, price, tags, colors}) {
       <div className="name">{name}</div>
       <div className="price">Price: {price}</div>
       <div className="tags">
+        Tags:
+        {' '}
         {tags.map (tag => <span className="tag" key={tag}>{tag}</span>)}
       </div>
       <div className="tags">
+        Available in:
+        {' '}
         {colors.map (color => <span className="tag" key={color}>{color}</span>)}
       </div>
     </div>
