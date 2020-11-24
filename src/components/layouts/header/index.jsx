@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
-import {getCartItems} from '../../../modules/cart';
+import cartContext from '../../../app/cart-context';
 
 export default function Header () {
+  const ctx = useContext (cartContext);
   return (
     <nav>
       <div className="nav-wrapper blue-grey">
@@ -18,7 +19,7 @@ export default function Header () {
             <Link to="/products">Our Products</Link>
           </li>
           <li>
-            <Link to="/cart">Cart: ({getCartItems ().length || 0})</Link>
+            <Link to="/cart">Cart: ({ctx.length})</Link>
           </li>
         </ul>
       </div>
