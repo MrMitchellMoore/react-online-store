@@ -21,7 +21,7 @@ export default function Product({id, name, imageUrl, price, tags, colors}) {
                   price,
                 })}
             >
-              +<span> Add to Cart</span>
+              + Add to Cart
             </div>
           </div>}
         <img src={imageUrl} alt={name} />

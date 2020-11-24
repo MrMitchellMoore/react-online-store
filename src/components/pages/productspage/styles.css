@@ -41,6 +41,7 @@
   position: absolute;
   bottom: 85%;
   left: 20%;
+  cursor: pointer;
 }
 
 .card-title {

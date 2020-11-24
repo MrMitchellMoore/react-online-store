@@ -7,10 +7,12 @@ import AboutPage from '../components/pages/aboutpage';
 import ProductsPage from '../components/pages/productspage';
 import CartPage from '../components/pages/cartpage';
 
+import {getCartItems} from '../modules/cart';
+
 import './app.css';
 
 export default function App () {
-  const cartCtx = useContext ([]);
+  const cartCtx = useContext (getCartItems ());
   return (
     <BrowserRouter>
       <Layout>
