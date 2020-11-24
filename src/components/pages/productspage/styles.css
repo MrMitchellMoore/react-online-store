@@ -11,7 +11,6 @@
 .products .product.hover {
   background-color: var(--imageBackgroundColor);
   padding-bottom: 1.5rem;
-  border: 1px solid rgb(241, 146, 146);
 }
 
 .products .tags .tag {

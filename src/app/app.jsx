@@ -5,6 +5,7 @@ import Layout from '../components/layouts';
 import HomePage from '../components/pages/homepage';
 import AboutPage from '../components/pages/aboutpage';
 import ProductsPage from '../components/pages/productspage';
+import CartPage from '../components/pages/cartpage';
 
 import './app.css';
 
@@ -21,6 +22,9 @@ export default function App () {
           </Route>
           <Route path="/products">
             <ProductsPage />
+          </Route>
+          <Route path="/cart">
+            <CartPage />
           </Route>
         </Switch>
       </Layout>
