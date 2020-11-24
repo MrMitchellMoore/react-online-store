@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import Layout from '../components/layouts';
@@ -10,6 +10,7 @@ import CartPage from '../components/pages/cartpage';
 import './app.css';
 
 export default function App () {
+  const cartCtx = useContext ([]);
   return (
     <BrowserRouter>
       <Layout>

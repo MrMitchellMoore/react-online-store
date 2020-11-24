@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import {addToCart} from '../../../modules/cart';
 
-export default function Product({name, imageUrl, price, tags, colors}) {
+export default function Product({id, name, imageUrl, price, tags, colors}) {
   const [hover, setHover] = useState (false);
   return (
     <div
@@ -11,7 +12,15 @@ export default function Product({name, imageUrl, price, tags, colors}) {
       <div className="card">
         {hover &&
           <div className="card-title">
-            <div className="add-to-cart">
+            <div
+              className="add-to-cart"
+              onClick={() =>
+                addToCart ({
+                  id,
+                  name,
+                  price,
+                })}
+            >
               +<span> Add to Cart</span>
             </div>
           </div>}
