@@ -1,9 +1,9 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
-import cartContext from '../../../app/cart-context';
+import CartContext from '../../../app/cart-context';
 
 export default function Header () {
-  const {cart} = useContext (cartContext);
+  const {cart} = useContext (CartContext);
   return (
     <nav>
       <div className="nav-wrapper blue-grey">

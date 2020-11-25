@@ -5,14 +5,14 @@ import HomePage from '../components/pages/homepage';
 import AboutPage from '../components/pages/aboutpage';
 import ProductsPage from '../components/pages/productspage';
 import CartPage from '../components/pages/cartpage';
-import cartContext from './cart-context';
+import CartContext from './cart-context';
 import useCart from '../hooks/use-cart';
 import './app.css';
 
 export default function App () {
   // const {cart, addToCart} = useCart ([]);
   return (
-    <cartContext.Provider value={useCart ([])}>
+    <CartContext.Provider value={useCart ([])}>
       <BrowserRouter>
         <Layout>
           <Switch>
@@ -31,6 +31,6 @@ export default function App () {
           </Switch>
         </Layout>
       </BrowserRouter>
-    </cartContext.Provider>
+    </CartContext.Provider>
   );
 }
