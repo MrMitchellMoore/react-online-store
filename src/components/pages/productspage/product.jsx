@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
-import {addToCart} from '../../../modules/cart';
+import React, {useState, useContext} from 'react';
+import cartContext from '../../../app/cart-context';
 
 export default function Product({id, name, imageUrl, price, tags, colors}) {
   const [hover, setHover] = useState (false);
+  const {addToCart} = useContext (cartContext);
   return (
     <div
       className={`product ${hover && 'hover'}`}

@@ -6,13 +6,13 @@ import AboutPage from '../components/pages/aboutpage';
 import ProductsPage from '../components/pages/productspage';
 import CartPage from '../components/pages/cartpage';
 import cartContext from './cart-context';
-import {getCartItems} from '../modules/cart';
-
+import useCart from '../hooks/use-cart';
 import './app.css';
 
 export default function App () {
+  // const {cart, addToCart} = useCart ([]);
   return (
-    <cartContext.Provider value={getCartItems ()}>
+    <cartContext.Provider value={useCart ([])}>
       <BrowserRouter>
         <Layout>
           <Switch>
