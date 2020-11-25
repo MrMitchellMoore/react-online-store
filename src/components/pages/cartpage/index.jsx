@@ -4,7 +4,12 @@ import CartContext from '../../../app/cart-context';
 import './cart.css';
 
 function withQuantities (products) {
-  return products;
+  return products.reduce ((acc, product) => {
+    const existing = acc.find (p => product.id === p.id);
+    return existing
+      ? [...acc.map (p => (p.id === product.id ? {...p, qty: p.qty + 1} : p))]
+      : [...acc, {...product, qty: 1}];
+  }, []);
 }
 
 export default function CartPage () {
@@ -28,9 +33,9 @@ export default function CartPage () {
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>{product.price}</td>
-              <td>{0}</td>
+              <td>{product.qty}</td>
               <td>${0}</td>
-              <tr />
+              <td />
             </tr>
           ))}
         </tbody>
