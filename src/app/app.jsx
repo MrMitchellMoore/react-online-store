@@ -5,7 +5,7 @@ import HomePage from '../components/pages/homepage';
 import AboutPage from '../components/pages/aboutpage';
 import ProductsPage from '../components/pages/productspage';
 import CartPage from '../components/pages/cartpage';
-import CartContext from './cart-context';
+import CartContext from '../components/cart/context';
 import useCart from '../hooks/use-cart';
 import './app.css';
 

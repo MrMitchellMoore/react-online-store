@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import Seo from '../seo';
-import CartContext from '../../../app/cart-context';
+import CartContext from '../../cart/context';
+
+import {formatCurrency} from '../../../modules/utils';
 import './cart.css';
 
 function withQuantities (products) {
@@ -11,6 +13,8 @@ function withQuantities (products) {
       : [...acc, {...product, qty: 1}];
   }, []);
 }
+
+function handleChangeQty () {}
 
 export default function CartPage () {
   const {cart} = useContext (CartContext);
@@ -33,8 +37,14 @@ export default function CartPage () {
             <tr key={product.id}>
               <td>{product.name}</td>
               <td>{product.price}</td>
-              <td>{product.qty}</td>
-              <td>${0}</td>
+              <td>
+                <input
+                  type="text"
+                  value={product.qty}
+                  onChange={handleChangeQty}
+                />
+              </td>
+              <td>{formatCurrency (product.price * product.qty)}</td>
               <td />
             </tr>
           ))}
